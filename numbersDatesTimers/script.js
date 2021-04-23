@@ -293,40 +293,72 @@ btnSort.addEventListener('click', function (e) {
 
 /////////////////////////////////////////////////
 
-// Lecture 1
+// Lecture 2
 
 // Math and Rounding
 
-console.log(Math.sqrt(25));
-console.log(25 ** (1 / 2));
-console.log(8 ** (1 / 3));
+// console.log(Math.sqrt(25));
+// console.log(25 ** (1 / 2));
+// console.log(8 ** (1 / 3));
 
-console.log(Math.max(5, 18, 23, 11, 2)); // pulls max value
-console.log(Math.max(12, 20, '40', 10, 1));
-console.log(Math.max('48px', 12, 18, 20, 30));
+// console.log(Math.max(5, 18, 23, 11, 2)); // pulls max value
+// console.log(Math.max(12, 20, '40', 10, 1));
+// console.log(Math.max('48px', 12, 18, 20, 30));
 
-console.log(Math.min(40, 45, 50, 1, 3)); // pulls min value
+// console.log(Math.min(40, 45, 50, 1, 3)); // pulls min value
 
-console.log(Math.PI * Number.parseFloat('10px') ** 2);
+// console.log(Math.PI * Number.parseFloat('10px') ** 2);
 
-console.log(Math.trunc(Math.random() * 6) + 1);
+// console.log(Math.trunc(Math.random() * 6) + 1);
 
-const randomInt = (min, max) => Math.trunc(Math.random() * (max - min) + 1) + min;
-console.log(randomInt(1, 20));
+// const randomInt = (min, max) => Math.trunc(Math.random() * (max - min) + 1) + min;
+// console.log(randomInt(1, 20));
 
 
-// Rounding Integers
-console.log(Math.trunc(23.44)); // removes decimals
-console.log(Math.round(23.54)); // rounds to nearst whole number
-console.log(Math.ceil(23.44)); // rounds up
-console.log(Math.floor(23.8)); // rounds down
+// // Rounding Integers
+// console.log(Math.trunc(23.44)); // removes decimals
+// console.log(Math.round(23.54)); // rounds to nearst whole number
+// console.log(Math.ceil(23.44)); // rounds up
+// console.log(Math.floor(23.8)); // rounds down
 
-console.log(Math.trunc(-20.5));
-console.log(Math.floor(-24.5)); // on neg it takes down lower
-console.log(Math.ceil(-24.5)); // on neg it puts number higher
+// console.log(Math.trunc(-20.5));
+// console.log(Math.floor(-24.5)); // on neg it takes down lower
+// console.log(Math.ceil(-24.5)); // on neg it puts number higher
 
-// Rounding decimals
-console.log((2.7).toFixed(0)); // converts num to string
-console.log((2.7).toFixed(4)); // nums tell how many nums after .
-console.log((2.754).toFixed(2)); // will cut off decimals also
-console.log(+(2.754).toFixed(2)); // + converts it to a integer again
+// // Rounding decimals
+// console.log((2.7).toFixed(0)); // converts num to string
+// console.log((2.7).toFixed(4)); // nums tell how many nums after .
+// console.log((2.754).toFixed(2)); // will cut off decimals also
+// console.log(+(2.754).toFixed(2)); // + converts it to a integer again
+
+/////////////////////////////////////////////////
+
+// Lecture 3
+
+// Remainder
+
+// console.log(5 % 2); // 2 can go into 5 twice with a remainder of 1
+// console.log(5 / 2); // 5 = 2 * 2 + 1
+
+// console.log(8 % 3); // 3 can go into 8 twice with a remainder of 2
+// console.log(8 / 3);
+
+// console.log(6 % 2); // there is no remainder so shows 0
+// console.log(6 / 2); 
+
+
+// const isEven = n => n % 2 === 0; // checks to see if num is even
+// console.log(isEven(2));
+// console.log(isEven(33));
+// console.log(isEven(66));
+
+// labelBalance.addEventListener('click', function() {
+//   [...document.querySelectorAll('.movements__row').forEach(function(row, i) {
+//     if(i % 2 === 0) {
+//       row.style.backgroundColor = 'orangered'
+//     }
+//     if(i % 3 === 0) {
+//       row.style.backgroundColor = 'blue'
+//     }
+//   })]
+// });
