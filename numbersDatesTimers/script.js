@@ -362,3 +362,37 @@ btnSort.addEventListener('click', function (e) {
 //     }
 //   })]
 // });
+
+/////////////////////////////////////////////////
+
+// Lecture 4
+
+// Working wtih bigInt
+
+console.log(2 ** 53 - 1);
+console.log(Number.MAX_SAFE_INTEGER);
+
+console.log(2 ** 53 + 1);
+
+console.log(8763096512837658235692365982365926192836n);
+console.log(BigInt(876238764));
+
+// Operations
+console.log(10000n + 10000n);
+console.log(981264912694612946921649126n * 2132984712987918273918279312n);
+
+const huge = 98274972947219874927492n;
+const num = 23;
+console.log(huge + BigInt(num));
+
+// Exceptions
+console.log(20n > 15);
+console.log(20n === 20);
+console.log(typeof 20n);
+console.log(20n == '20');
+
+console.log(huge + ' is really big!');
+
+// Divisions
+console.log(10n / 3n);
+console.log(10 / 3);
