@@ -369,30 +369,68 @@ btnSort.addEventListener('click', function (e) {
 
 // Working wtih bigInt
 
-console.log(2 ** 53 - 1);
-console.log(Number.MAX_SAFE_INTEGER);
+// console.log(2 ** 53 - 1);
+// console.log(Number.MAX_SAFE_INTEGER);
 
-console.log(2 ** 53 + 1);
+// console.log(2 ** 53 + 1);
 
-console.log(8763096512837658235692365982365926192836n);
-console.log(BigInt(876238764));
+// console.log(8763096512837658235692365982365926192836n);
+// console.log(BigInt(876238764));
 
-// Operations
-console.log(10000n + 10000n);
-console.log(981264912694612946921649126n * 2132984712987918273918279312n);
+// // Operations
+// console.log(10000n + 10000n);
+// console.log(981264912694612946921649126n * 2132984712987918273918279312n);
 
-const huge = 98274972947219874927492n;
-const num = 23;
-console.log(huge + BigInt(num));
+// const huge = 98274972947219874927492n;
+// const num = 23;
+// console.log(huge + BigInt(num));
 
-// Exceptions
-console.log(20n > 15);
-console.log(20n === 20);
-console.log(typeof 20n);
-console.log(20n == '20');
+// // Exceptions
+// console.log(20n > 15);
+// console.log(20n === 20);
+// console.log(typeof 20n);
+// console.log(20n == '20');
 
-console.log(huge + ' is really big!');
+// console.log(huge + ' is really big!');
 
-// Divisions
-console.log(10n / 3n);
-console.log(10 / 3);
+// // Divisions
+// console.log(10n / 3n);
+// console.log(10 / 3);
+
+/////////////////////////////////////////////////
+
+// Lecture 5
+
+// Creating dates
+
+// Create a date
+// const newDate = new Date();
+// console.log(newDate);
+
+// console.log(new Date('Aug 02 2020 18:05:41'));
+// console.log(new Date('December 25, 2015'));
+// console.log(new Date(account1.movementsDates[0]));
+
+// console.log(new Date(2037, 10, 18, 15, 23, 5)); // Month [2] is 0 based
+// console.log(new Date(2037, 10, 34, 15, 23, 5)); // corrects to Dec 4th
+
+// console.log(new Date(0));
+// console.log(new Date(3 * 24 * 60 * 60 * 1000));
+
+// Working with Dates
+// const future = new Date(2037, 10, 19, 15, 23)
+// console.log(future);
+// console.log(future.getFullYear());
+// console.log(future.getMonth());
+// console.log(future.getHours());
+// console.log(future.getMinutes());
+// console.log(future.getSeconds());
+// console.log(future.toISOString());
+// console.log(future.getTime());
+
+// console.log(new Date(2142282180000));
+
+// console.log(Date.now());
+
+// future.setFullYear(2040)
+// console.log(future);
